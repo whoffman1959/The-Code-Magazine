@@ -229,6 +229,7 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+  cursor: pointer;
 }
 
 /* Psuedo elements do not occure in html but can be placed in CSS like changing the book so it is no longer italic. Use double colons. Pseudo-class : → selects an element that already exists in the DOM, based on its state/condition/position.
@@ -252,6 +253,10 @@ h1::first-letter {
 /* h3 + p::first-line {
   color: red;
 } */
+
+/*  Pseudo-classes (:)are all about behavior and state (how an existing element behaves when hovered, clicked, or where it sits in line, it is CSS concerened).
+
+Pseudo-elements (::) are about structure and content (shaping specific parts of the text or magically injecting things like quotes, icons, or words without touching the HTML file).*/
 
 /* The after and the before are the most used Psuedo Elements. The after puts it right after the last text in the element. The Basic Language of the web HTMLTOP in this case, so we need to style. Any pusedo element is inline so we need to do inline block to add padding top and bottom. Notice below you can position absolute to the same element itself. h2 is not only the absolute, but the relative.A note is that there is not a h2 TOP in the HTML. We have added it through CSS. */
 
