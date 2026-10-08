@@ -39,6 +39,7 @@ body {
 
 nav {
   font-size: 18px;
+  text-align: center;
 }
 
 article {
@@ -232,7 +233,7 @@ button {
   cursor: pointer;
 }
 
-/* Psuedo elements do not occure in html but can be placed in CSS like changing the book so it is no longer italic. Use double colons. Pseudo-class : → selects an element that already exists in the DOM, based on its state/condition/position.
+/* Psuedo elements do not occur in html but can be placed in CSS like changing the book so it is no longer italic. Use double colons. Pseudo-class : → selects an element that already exists in the DOM, based on its state/condition/position.
 Pseudo-element :: → targets or creates an element-like part for rendering that is not a separate element in the DOM. */
 
 h1::first-letter {
