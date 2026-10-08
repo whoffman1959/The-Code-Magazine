@@ -17,24 +17,27 @@
           <!-- The # does not point to anywhere. -->
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSS Grid</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
         </nav>
       </header>
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
-          <img
-            class="author-headshot author-img"
-            src="img/laura-jones.jpg"
-            alt="Headshot of author Laura Jones"
-            width="80"
-            height="80"
-            title="Picture of Author"
-          />
-          <p class="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-          </p>
+          <div class="author-box">
+            <img
+              class="author-headshot author-img"
+              src="img/laura-jones.jpg"
+              alt="Headshot of author Laura Jones"
+              width="80"
+              height="80"
+              title="Picture of Author"
+            />
+            <p class="author">
+              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            </p>
+          </div>
+
           <!-- Setting only the width maintains the image's original aspect ratio. The default measurement is in pixels. Title attribute puts title when you hover over picture. You do not need <figure> but is semantic. Normally do width and height in CSS. -->
           <img
             src="img/post-img.jpg"
@@ -98,36 +101,42 @@
       </article>
       <aside>
         <h3>Related posts</h3>
-        <ul>
-          <li class="related">
+        <ul class="related">
+          <li class="related-post">
             <img
               src="img/related-1.jpg"
               alt="Person programming"
               width="80"
               height="80"
             />
-            <a href="#">How to learn Web Development</a>
-            <p class="related-author">By Jonas Schmedtmann</p>
+            <div>
+              <a href="#" class="related-link">How to learn Web Development</a>
+              <p class="related-author">By Jonas Schmedtmann</p>
+            </div>
           </li>
-          <li class="related">
+          <li class="related-post">
             <img
               src="img/related-2.jpg"
               alt="Thunder storm"
               width="80"
               height="80"
             />
-            <a href="#">The Unknown Powers of CSS</a>
-            <p class="related-author">By Jim Dillon</p>
+            <div>
+              <a href="#" class="related-link">The Unknown Powers of CSS</a>
+              <p class="related-author">By Jim Dillon</p>
+            </div>
           </li>
-          <li class="related">
+          <li class="related-post">
             <img
               src="img/related-3.jpg"
               alt="JavaScript code"
               width="80"
               height="80"
             />
-            <a href="#">Why JavaScript is Awesome</a>
-            <p class="related-author">By Matilda</p>
+            <div>
+              <a href="#" class="related-link">Why JavaScript is Awesome</a>
+              <p class="related-author">By Matilda</p>
+            </div>
           </li>
         </ul>
       </aside>

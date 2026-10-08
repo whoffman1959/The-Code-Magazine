@@ -55,8 +55,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0px;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -90,6 +89,7 @@ h4 {
   text-transform: uppercase;
   /* Align to center of parent element. */
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -140,6 +140,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* Psuedo Classes */
@@ -197,7 +198,6 @@ nav a:link {
   /* inline-block enables us to do a margin-top. Inlie only element you can not adjust margin top or bottom. */
   display: inline-block;
   margin-right: 30px;
-  margin-top: 10px;
 }
 
 /* 
@@ -279,7 +279,7 @@ h2::after {
 }
 
 /* FLOATS */
-
+/* 
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -293,7 +293,7 @@ h2::after {
 
 /* The gray background losses its height by below. Without padding it would dissapear completely becuase all the child elements are floated. It is as if elements are not on the page. Called the collapsing element and we say that the height has collapsed. Fix by adding another element to header and clearing the float. */
 
-h1 {
+/* h1 {
   float: left;
 }
 
@@ -303,7 +303,7 @@ nav {
 
 /* Used to put gray bar back in from removeing elements due to floating. Put space for content and psuedo elements are inline so change to block. Will not use float much so we will learn better ways. */
 
-.clear-fix::after {
+/* .clear-fix::after {
   clear: both;
   content: ' ';
   display: block;
@@ -319,6 +319,46 @@ aside {
 }
 
 /* Already has element so just clear. */
-footer {
+/* footer {
   clear: both;
+} */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
