@@ -277,3 +277,48 @@ h2::after {
   top: -10px;
   right: -10px;
 }
+
+/* FLOATS */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+/* The gray background losses its height by below. Without padding it would dissapear completely becuase all the child elements are floated. It is as if elements are not on the page. Called the collapsing element and we say that the height has collapsed. Fix by adding another element to header and clearing the float. */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* Used to put gray bar back in from removeing elements due to floating. Put space for content and psuedo elements are inline so change to block. Will not use float much so we will learn better ways. */
+
+.clear-fix::after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+
+/* Already has element so just clear. */
+footer {
+  clear: both;
+}
